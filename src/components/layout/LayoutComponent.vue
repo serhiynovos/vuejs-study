@@ -1,7 +1,6 @@
 <template>
   <div>
     <navbar/>
-
     <div class="container">
       <router-view></router-view>
     </div>

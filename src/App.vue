@@ -6,7 +6,8 @@
 import VueRouter from "vue-router";
 
 import LayoutComponent from "./components/layout/LayoutComponent";
-import HomePageComponent from "./components/pages/HomePageComponent";
+
+const HomePageComponent = () => import("./components/pages/HomePageComponent");
 
 const router = new VueRouter({
   routes: [{ path: "/", component: HomePageComponent }]
