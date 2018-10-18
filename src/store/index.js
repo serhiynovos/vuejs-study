@@ -1,1 +1,20 @@
-export * from "./store"
+import Vuex from 'vuex';
+import Vue from 'vue';
+
+Vue.use(Vuex);
+
+export function createStore(){
+  return new Vuex.Store({
+    state: {
+      count: 0
+    },
+    mutations: {
+      increment(state) {
+        state.count++;
+      },
+      decrement(state) {
+        state.count--;
+      }
+    }
+  });
+}
